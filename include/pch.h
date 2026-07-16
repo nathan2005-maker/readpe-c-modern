@@ -13,4 +13,7 @@
 #include <psapi.h>
 
 
-#endif /* PCH_H */
+#include "VTableError.h"
+
+
+#endif

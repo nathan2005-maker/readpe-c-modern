@@ -10,6 +10,7 @@ include_directories(include)
 set(SOURCES
     cmd/main.c
     src/pch.c
+    src/VTableError.c
 )
 
 #executable main
