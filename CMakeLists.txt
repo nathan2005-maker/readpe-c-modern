@@ -10,6 +10,7 @@ set(SOURCES
     src/VTableError.c
     src/pe_parser.c
     src/io.c
+    src/sv.c
 )
 
 add_executable(readpe ${SOURCES})
