@@ -8,11 +8,11 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stddef.h>
+#include <assert.h>
 
 #include <windows.h>
 #include <tlhelp32.h>
 #include <psapi.h>
 
-#include "VTableError.h"
 
 #endif
