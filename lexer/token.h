@@ -85,5 +85,20 @@ token_make(const Token_Kind kind, const Token_Value value, const Location locati
     };
 }
 
+Token
+tokens_shift(Tokens* tokens)
+{
+    if (tokens->count == 0) {
+        return token_make(TOKEN_EOF, (Token_Value) { 0 }, location_make(NULL, 0, 0));
+    }
+
+    Token result = tokens->data[0];
+
+    tokens->count = tokens->count - 1;
+    tokens->data = tokens->data + 1;
+
+    return result;
+}
+
 #endif /* TOKEN_IMPLEMENTATION */
 #endif /* __TOKEN_H__ */
