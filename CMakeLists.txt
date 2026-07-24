@@ -13,6 +13,7 @@ set(SOURCES
     src/sv.c
     src/ast.c
     src/token.c
+    src/cg.c
 )
 
 add_executable(readpe ${SOURCES})
