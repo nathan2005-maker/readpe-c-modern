@@ -13,5 +13,6 @@
 #include "da.h"
 #include "token.h"
 #include "ast.h"
+#include "cg.h"
 
 #endif
